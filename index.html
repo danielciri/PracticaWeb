@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="language" content="es" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daniel hotel</title>
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="mi.css">
+
+
+	<script src="scripts/htmlDinamico.js"></script>
+	<script type="application/javascript" src="assets/files.js"></script>
+	<script type="application/javascript" src="scripts/lib.js"></script>
+	<script type="application/javascript" src="scripts/main.js"></script>
+	<script type="application/javascript" src="scripts/scrolleable.js"></script>
+	
+
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top customNavbar" id="customNavbar">
+		<a class="navbar-brand" href="#">Daniel Hotel</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav m-auto">.
+
+
+				<a class="nav-link" href="#" id="boton1">Blog <span class="sr-only">(current)</span></a>
+
+				<a class="nav-link" href="#"  onclick="funcionOcios()" id="audioEventos"  >Eventos <span
+						class="sr-only">(current)</span></a>
+
+				<a class="nav-link" href="#"  id="audioSuites" >Suites <span class="sr-only">(current)</span></a>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="audioTourVirtual" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+						Tour Virtual
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" onclick="cargarHabitaciones()" href="#" id="fotos">fotos</a>
+						<a class="dropdown-item" href="#" onclick="funcionAudio()" id="audioIndex">Audio</a>
+					</div>
+				<li class="nav-item active">
+					<a class="nav-link" href="#" id="audioInstalaciones">Instalaciones <span class="sr-only">(current)</span></a>
+				</li>
+			
+
+				<br></br>
+
+
+
+		</div>
+	</nav>
+	<div class="container" id="container-Index">
+
+	
+	<div class=" row d-flex justify-content-center align-items-right " >
+
+		<header class="header">
+
+
+			<div class="row d-flex justify-content-center align-items-right tituloPrincipal">
+				<h1>Donde pasaras tus mejores dias</h1>
+			</div>
+			<div class="row d-flex justify-content-center inputDate">
+				<form class="needs-validation" id="fechaReserva" method="GET" novalidate>
+
+					<div class="form-row justify-content-center principalLabels">
+						<div class="col-md-3 mb-2">
+							<label for="party">Entrada</label>
+							<input type="date" id="entrada" name="entrada" min="2020-09-12" max="2021-12-31" required>
+
+							<span class="validity"></span>
+
+						</div>
+						<div class="col-md-3 mb-2">
+							<label for="salida">salida</label>
+							<input type="date" id="salida" name="party" min="2020-09-12" max="2021-12-31" required>
+							<span class="validity"></span>
+
+						</div>
+
+						<div class="col-md-2 mb-1">
+							<label for="validationCustom03">Personas</label>
+							<input id="balloons" type="number" name="balloons" step="1" min="1" max="20" required>
+							<span class="validity"></span>
+							<br><br>
+
+
+						</div>
+						<div class="col-md-1 mb-1">
+							<br></br>
+							<a class="btn btn-primary btn-lg" onclick="fechasReservas()" role="button" >Reservar</a>
+
+
+						</div>
+
+
+
+				</form>
+			</div>
+
+
+		</header>
+
+
+		<!-- Apartado 1 -->
+		<!-- Apartado 1 -->
+		<div class="container">
+			<div class="container-fluid margen ">
+				<br></br>
+				<div class="row">
+
+					<div class="col-sm-12">
+						<h2>Disfrutas de nuestras diferentes instalaciones</h2>
+					</div>
+
+					<div class="col-lg-4">
+						<br></br>
+
+						<p>
+							unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+							Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+							PageMaker including versions of Lorem Ipsum.
+						</p>
+						<p id="cambioTexto">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book
+						</p>
+					</div>
+
+					<div class="col-lg-4">
+
+
+						<br></br>
+						<img class="card-img-top" src="imagenes/2.jfif" height="198px" style="width:105%">
+					</div>
+					<div class="col-lg-4">
+
+						<div class="card-body">
+
+
+							<br></br>
+
+							<img src="imagenes/4.jfif" alt="image">
+
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<p>
+							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+							of classical Latin literature from 45 BC, making it over 2000 years old.
+						</p>
+						<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+							m" by Cicero are also reproduced in their exact original form, accompanied by English
+							versions from the 1914 translation by H. Rackham.
+						</p>
+					</div>
+
+					<div class="col-md-4">
+
+						<img class="" src="imagenes/1.jpg" height="198px" style="width:100%">
+					</div>
+
+					<div class="col-md-3">
+
+
+						<img class="" src="imagenes/3.jfif" height="198px" style="width:90%">
+					</div>
+				</div>
+
+				<br></br>
+				<button type="button" class="btn btn-primary btn-lg"
+					style="background-color: rgba(157,133,79,1);">Conoce nuestro restaurante
+				</button>
+			</div>
+
+
+
+			<!--Apartado 2 -->
+			<div class="container-fluid margen2">
+				<br></br>
+				<br></br>
+				<br></br>
+				<h2>Experiencia en Daniel Hotel</h2>
+				<br></br>
+				<div class="row ">
+					<div class="col-sm-4">
+						<p>
+							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+							of classical Latin literature from 45 BC,
+						</p>
+						<p>
+							It is a long established fact that a reader will be distracted by the readable content of a
+							page when looking at its layout. The point of using Lorem Ipsum is that it has a
+							more-or-less normal distribution of letters, as opposed to using 'Content here, content
+							here', making it look like readable Eng
+						</p>
+						<p>
+							It is a long established fact that a reader will be distracted by the readable content of a
+							page when looking at its layout. The point of using Lorem Ipsum is that it has a
+							more-or-less normal distribution of letters, as opposed to using 'Content here, content
+							here', making it look like readable English. Many desktop publishing
+						</p>
+						<br></br>
+
+
+
+					</div>
+
+					<div class="col-sm-8">
+						<img src="imagenes/5.jpg" alt="Lights" style="width:100%">
+
+						<br></br>
+						<button type="button" id="boton" class="btn btn-primary btn-lg"
+							style="background-color: rgba(157,133,79,1);">Conoce nuestras experiencias</button>
+
+					</div>
+
+
+				</div>
+				<br></br>
+				<br></br>
+				<br></br>
+
+				<br></br>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<!-- Footer -->
+	<footer class="page-footer font-small mdb-color pt-4">
+
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+
+			<!-- Footer links -->
+			<div class="row text-center text-md-left mt-3 pb-3">
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-4">
+
+					<img src="imagenes/logo.png" class="rounded" width="250" height="300" alt="" loading="lazy">
+				</div>
+				<!-- Grid column -->
+
+				<hr class="w-100 clearfix d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+					<h3 class="text-uppercase mb-4 font-weight-bold" id="nomHotel">Daniel Hotel</h3>
+					<p><small>Ademas somos organizadores de eventos con una gran trayectoria. Solo lo conoceras Daniel
+							hotel</small></p>
+					<p id="direccion"><small>Avenida Augusta N10 (03700),Jave,Alicante</small></p>
+					<p  id="correo"><small> info@gmail.com</small></p>
+					<p id="numContacto" ><small> + 34 372 837 49</small></p>
+					<p ><small> + 34 372 837 49</small></p>
+
+				</div>
+				<!-- Grid column -->
+
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 ">
+					<h3 class="text-uppercase mb-4 font-weight-bold">Siguenos</h3>
+					<ul class="list-unstyled list-inline">
+						<li class="list-inline-item">
+							<img src="imagenes/facebook.png">
+						</li>
+						<li class="list-inline-item">
+							<a class="btn-floating btn-sm rgba-white-slight mx-1">
+								<img src="imagenes/gorjeo.png">
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="btn-floating btn-sm rgba-white-slight mx-1">
+								<img src="imagenes/google-mas.png">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- Grid column -->
+
+			</div>
+			<!-- Footer links -->
+
+			<hr>
+
+			<!-- Grid row -->
+			<div class="row d-flex align-items-center">
+
+				<!-- Grid column -->
+				<div class="col-md-7 col-lg-8">
+
+
+
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-4 ml-lg-0">
+
+					<!-- Social buttons -->
+					<div class="text-center text-md-right">
+						<ul class="list-unstyled list-inline">
+							<p class="text-center text-md-left"> © 2020 Daniel Hotel Javea. All right reserved
+								<a href="https://mdbootstrap.com/">
+
+
+								</a>
+						</ul>
+					</div>
+
+				</div>
+				<!-- Grid column -->
+
+			</div>
+		</div>
+		<!-- Footer Links -->
+
+	</footer>
+	<!-- Grid row -->
+	<!-- Footer -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+		integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+		crossorigin="anonymous"></script>
+
+		<script type="application/javascript" src="scripts/accesibilidad.js"></script>
+	
+</body>
+
+</html>
